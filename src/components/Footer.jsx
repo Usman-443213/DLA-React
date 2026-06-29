@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="foot-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#video-sec">See It In Action</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#how">The Process</a></li>
             <li><a href="#auctions">Auction Access</a></li>
             <li><a href="#pricing">Pricing</a></li>

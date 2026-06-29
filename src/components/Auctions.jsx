@@ -497,7 +497,7 @@ export default function Auctions() {
               onClick={handleClick}
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
-              style={{ display: 'block', cursor: 'grab' }}
+              style={{ display: 'block', cursor: 'grab', touchAction: 'none' }}
             ></canvas>
             <span id="globe-drag-hint">Drag to rotate · Click a marker to explore</span>
           </div>
@@ -562,7 +562,7 @@ export default function Auctions() {
                 rel="noopener"
               >
                 <div className="p-tile-logo">
-                  <img src={partner.img} alt={partner.alt} />
+                  <img src={partner.img} alt={partner.alt} loading="lazy" />
                 </div>
                 <div className="p-tile-name">
                   <h5>{partner.name}</h5>

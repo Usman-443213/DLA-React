@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import VideoSection from './components/VideoSection';
 import Process from './components/Process';
-import Auctions from './components/Auctions';
+import Reviews from './components/Reviews';
 import Pricing from './components/Pricing';
 import GetStarted from './components/GetStarted';
 import Footer from './components/Footer';
+
+// Lazy load heavy components for performance optimization
+const VideoSection = lazy(() => import('./components/VideoSection'));
+const Auctions = lazy(() => import('./components/Auctions'));
 
 export default function App() {
   // Centralized Scroll Reveal Animation Observer
@@ -40,9 +43,14 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <VideoSection />
+      <Suspense fallback={<div className="loading-fallback">Loading overview video...</div>}>
+        <VideoSection />
+      </Suspense>
       <Process />
-      <Auctions />
+      <Suspense fallback={<div className="loading-fallback">Loading interactive globe...</div>}>
+        <Auctions />
+      </Suspense>
+      <Reviews />
       <Pricing />
       <GetStarted />
       <Footer />

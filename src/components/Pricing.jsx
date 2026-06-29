@@ -51,7 +51,7 @@ export default function Pricing() {
               </li>
               <li>
                 {checkIcon}
-                Surety bond &amp; garage liability insurance
+                Office setup furnishings as required
               </li>
             </ul>
           </div>
@@ -59,13 +59,13 @@ export default function Pricing() {
           {/* Card 2: Featured Monthly Fee */}
           <div className="pr-card featured reveal">
             <div className="pr-badge">Ongoing</div>
-            <span className="pr-type">Monthly Fee</span>
+            <span className="pr-type"><b>Monthly Rent</b> — $650/month</span>
             <div className="pr-price">$650</div>
             <span className="pr-sub">Ongoing Administrative Services</span>
             <ul className="pr-list">
               <li>
                 {checkIcon}
-                Ongoing compliance &amp; renewal support
+                <strong>Client Office Space — dedicated professional suite</strong>
               </li>
               <li>
                 {checkIcon}
@@ -77,7 +77,7 @@ export default function Pricing() {
               </li>
               <li>
                 {checkIcon}
-                Optional — available after setup completes
+                Ongoing compliance &amp; renewal support
               </li>
             </ul>
           </div>
@@ -85,7 +85,7 @@ export default function Pricing() {
         </div>
 
         {/* Fine print note */}
-        <p className="pr-note">
+        <p className="pr-note" style={{ fontWeight: 'bold' }}>
           * Government fees, insurance premiums, and surety bond costs vary and are separate from the above service fees.
         </p>
 

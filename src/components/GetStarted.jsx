@@ -131,7 +131,7 @@ export default function GetStarted() {
           <h2 className="s-title">Are You Ready to Get<br />Your Dealer License?</h2>
           <div className="bar"></div>
           <p className="s-desc">
-            With over 10 years in the auto industry, we've helped clients nationwide get fully licensed and start buying at auction. Here's everything included:
+            With over 10 years in the auto industry, we've helped clients nationwide get fully licensed in as little as 30-45 days. Here's everything included:
           </p>
           <ul className="chk-list">
             {checklistItems.map((item, idx) => (
@@ -249,7 +249,7 @@ export default function GetStarted() {
             </div>
           </a>
 
-          <p className="form-note">No obligations. Free consultation. Licensed in as little as 30 days.</p>
+          <p className="form-note">No obligations. Free consultation. Licensed in as little as 30-45 days.</p>
         </div>
 
       </div>

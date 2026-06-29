@@ -48,7 +48,7 @@ export default function Hero() {
           <h1 className="hero-h1">Get Your Own</h1>
           
           <div className="hero-subline">
-            <em style={{ fontStyle: 'normal' }}>Auto Dealer License</em> in 30 Days.
+            <em style={{ fontStyle: 'normal' }}>Auto Dealer License</em> in 30-45 Days.
           </div>
           
           <p className="hero-sub">
@@ -89,7 +89,7 @@ export default function Hero() {
 
           <div className="hero-counters">
             <div className="ctr">
-              <span className="ctr-n">30</span>
+              <span className="ctr-n">30-45</span>
               <span className="ctr-l">Days to License</span>
             </div>
             <div className="ctr">

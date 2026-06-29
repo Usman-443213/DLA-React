@@ -48,6 +48,7 @@ export default function Process() {
       num: '05',
       title: 'Your License Is Approved',
       desc: 'In as little as 21–30 days, your dealer license is active under your own business name.',
+      notice: 'MANDATORY pre-license seminar requirement is fully coordinated & completed.',
       icon: (
         <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <polyline points="20 6 9 17 4 12" />
@@ -91,6 +92,11 @@ export default function Process() {
               <div className="how-ico">{step.icon}</div>
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
+              {step.notice && (
+                <p style={{ color: 'var(--gold)', fontWeight: 'bold', fontSize: '0.82rem', marginTop: '0.6rem', lineHeight: '1.4' }}>
+                  {step.notice}
+                </p>
+              )}
             </div>
           ))}
         </div>

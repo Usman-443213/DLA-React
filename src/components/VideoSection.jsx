@@ -48,17 +48,42 @@ export default function VideoSection() {
               </p>
             </div>
           ) : (
-            <video 
-              autoPlay 
-              controls 
-              playsInline 
-              preload="auto"
-              poster={coverImg}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-            >
-              <source src="/intro.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+              <button 
+                className="vid-close-btn" 
+                onClick={() => setIsPlaying(false)}
+                aria-label="Close video"
+                style={{
+                  position: 'absolute',
+                  top: '16px',
+                  right: '16px',
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  zIndex: 10,
+                  fontSize: '18px',
+                  fontWeight: 'bold'
+                }}
+              >
+                ✕
+              </button>
+              <video 
+                autoPlay 
+                controls 
+                loop
+                playsInline 
+                preload="auto"
+                poster={coverImg}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              >
+                <source src="/intro.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           )}
         </div>
       </div>
