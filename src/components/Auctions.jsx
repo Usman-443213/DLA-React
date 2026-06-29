@@ -2,15 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import * as topojson from 'topojson-client';
 
-// Import Partner Logos
-import imgA from '../assets/a.png';
-import imgB from '../assets/b.png';
-import imgC from '../assets/c.png';
-import imgD from '../assets/d.png';
-import imgE from '../assets/e.png';
-import imgF from '../assets/f.png';
-import imgG from '../assets/g.png';
-import imgH from '../assets/h.png';
+
 
 // Regions metadata
 const REGIONS = {
@@ -86,17 +78,7 @@ export default function Auctions() {
     setHoveredId(id);
   };
 
-  // Partners logo array matched correctly to the actual logo images on disk
-  const partners = [
-    { name: 'Manheim', href: 'https://www.manheim.com', desc: "North America's largest wholesale auto auction", img: imgA, alt: 'Manheim' },
-    { name: 'ADESA', href: 'https://www.adesa.com', desc: 'Leading global wholesale vehicle auction network', img: imgB, alt: 'ADESA' },
-    { name: 'Copart', href: 'https://www.copart.com', desc: 'Global leader in 100% online used car auctions', img: imgC, alt: 'Copart' },
-    { name: 'AutoCheck / Experian', href: 'https://www.autocheck.com', desc: 'Vehicle history reports for smart buying', img: imgD, alt: 'AutoCheck' },
-    { name: 'Westlake Financial', href: 'https://www.westlakefinancial.com', desc: 'Full-spectrum automotive technology and lending solutions', img: imgE, alt: 'Westlake' },
-    { name: 'Automotive Finance Corp', href: 'https://www.autofinance.com', desc: 'Floorplan financing for your inventory', img: imgF, alt: 'AFC' },
-    { name: 'SBA Resources', href: 'https://www.sba.gov', desc: 'Small business tools for dealer entrepreneurs', img: imgG, alt: 'SBA' },
-    { name: 'Shiply Transport', href: 'https://www.shiply.com', desc: 'Nationwide vehicle shipping for dealers', img: imgH, alt: 'Shiply' }
-  ];
+
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -549,29 +531,6 @@ export default function Auctions() {
           </div>
         </div>
 
-        {/* Partner brand tiles strip */}
-        <div className="partners-strip">
-          <h4>Trusted Industry Partners &amp; Platforms</h4>
-          <div className="p-grid">
-            {partners.map((partner, idx) => (
-              <a 
-                key={idx}
-                className="p-tile reveal" 
-                href={partner.href} 
-                target="_blank" 
-                rel="noopener"
-              >
-                <div className="p-tile-logo">
-                  <img src={partner.img} alt={partner.alt} loading="lazy" />
-                </div>
-                <div className="p-tile-name">
-                  <h5>{partner.name}</h5>
-                  <p>{partner.desc}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
 
       </div>
     </section>
