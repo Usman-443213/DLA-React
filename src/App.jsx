@@ -50,9 +50,9 @@ export default function App() {
       <Suspense fallback={<div className="loading-fallback">Loading interactive globe...</div>}>
         <Auctions />
       </Suspense>
-      <Reviews />
       <Pricing />
       <GetStarted />
+      <Reviews />
       <Footer />
     </>
   );

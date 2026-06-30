@@ -59,13 +59,13 @@ export default function Pricing() {
           {/* Card 2: Featured Monthly Fee */}
           <div className="pr-card featured reveal">
             <div className="pr-badge">Ongoing</div>
-            <span className="pr-type"><b>Monthly Rent</b> — $650/month</span>
+            <span className="pr-type">Monthly Fee</span>
             <div className="pr-price">$650</div>
             <span className="pr-sub">Ongoing Administrative Services</span>
             <ul className="pr-list">
               <li>
                 {checkIcon}
-                <strong>Client Office Space — dedicated professional suite</strong>
+                <strong>Monthly Rent</strong> — $650/month facility fee
               </li>
               <li>
                 {checkIcon}
@@ -77,7 +77,7 @@ export default function Pricing() {
               </li>
               <li>
                 {checkIcon}
-                Ongoing compliance &amp; renewal support
+                Client Office Space — your dedicated professional suite
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ export default function Pricing() {
 
         {/* Fine print note */}
         <p className="pr-note" style={{ fontWeight: 'bold' }}>
-          * Government fees, insurance premiums, and surety bond costs vary and are separate from the above service fees.
+          <strong>* Government fees, insurance premiums, and surety bond costs vary and are separate from the above service fees. Total one-time setup investment: $500.</strong>
         </p>
 
       </div>

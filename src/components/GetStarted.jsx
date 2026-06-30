@@ -67,7 +67,7 @@ export default function GetStarted() {
     "Bid in person or remotely via smartphone — from anywhere",
     "Handle ALL unannounced inspections in relation to your office, license, or records — we manage it from start to finish",
     "Compliant office setup — fully equipped with desk, chair, and landline phone necessary to pass your license inspection",
-    "Dealer license + 3 dealer plates — legally operate unregistered vehicles on public roads for business and demonstration purposes"
+    "Dealer license + 3 dealer plates"
   ];
 
   // Button rendering based on submission status

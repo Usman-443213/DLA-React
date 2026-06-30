@@ -823,116 +823,7 @@ section {
   transform: rotate(90deg);
 }
 
-/* ==========================================================================
-   PARTNERS STRIP ( brand logo grids with hover-reveal descriptions )
-   ========================================================================== */
 
-.partners-strip {
-  margin-top: 2.5rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.partners-strip h4 {
-  text-align: center;
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
-  margin-bottom: 1.2rem;
-}
-
-.p-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.85rem;
-}
-
-.p-tile {
-  background: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 11px;
-  padding: 1.2rem 0.9rem 1rem;
-  text-align: center;
-  transition: all 0.35s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  min-height: 90px;
-}
-
-.p-tile:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.22);
-  border-color: rgba(201, 168, 76, 0.4);
-  background: var(--navy-m);
-}
-
-.p-tile-logo {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.32s, transform 0.32s;
-  position: relative;
-  z-index: 1;
-}
-
-.p-tile-logo img {
-  max-height: 50px;
-  max-width: 90%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.p-tile-name {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 0.65rem;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.32s, transform 0.32s;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.p-tile-name h5 {
-  font-family: "Playfair Display", serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--gold);
-  margin: 0 0 0.3rem;
-  line-height: 1.3;
-}
-
-.p-tile-name p {
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.52);
-  line-height: 1.45;
-  margin: 0;
-}
-
-.p-tile:hover .p-tile-logo {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-.p-tile:hover .p-tile-name {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ==========================================================================
    PRICING
@@ -1410,9 +1301,7 @@ footer {
   #globe-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .p-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+
   .form-row {
     grid-template-columns: 1fr;
   }
@@ -1661,29 +1550,7 @@ footer {
     font-size: 0.76rem;
     line-height: 1.58;
   }
-  .partners-strip {
-    margin-top: 2rem;
-  }
-  .p-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-  }
-  .p-tile {
-    padding: 0.75rem 0.6rem;
-    min-height: 75px;
-  }
-  .p-tile-logo {
-    height: 40px;
-  }
-  .p-tile-logo img {
-    max-height: 36px;
-  }
-  .p-tile-name h5 {
-    font-size: 0.7rem;
-  }
-  .p-tile-name p {
-    font-size: 0.56rem;
-  }
+
   .pr-card {
     padding: 1.4rem;
   }
@@ -1803,9 +1670,7 @@ footer {
   #globe-cards {
     grid-template-columns: 1fr;
   }
-  .p-grid {
-    grid-template-columns: 1fr;
-  }
+
   .pr-price {
     font-size: 1.8rem;
   }

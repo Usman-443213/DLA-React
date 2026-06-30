@@ -47,8 +47,8 @@ export default function Process() {
     {
       num: '05',
       title: 'Your License Is Approved',
-      desc: 'In as little as 21–30 days, your dealer license is active under your own business name.',
-      notice: 'MANDATORY pre-license seminar requirement is fully coordinated & completed.',
+      desc: 'In as little as 30-45 days, your dealer license is active under your own business name.',
+      notice: 'MANDATORY: A pre-licensing seminar must be attended and completed as a requirement for dealer license approval.',
       icon: (
         <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <polyline points="20 6 9 17 4 12" />
