@@ -93,7 +93,7 @@ export default function Pricing() {
         </div>
 
         {/* Fine print note */}
-        <p className="pr-note" style={{ fontWeight: 'bold' }}>
+        <p className="pr-note" style={{ fontWeight: 'bold', color: 'var(--gold)' }}>
           <strong>* Government fees, insurance premiums, and surety bond costs vary and are separate from the above service fees. Total one-time setup investment: $500.</strong>
         </p>
 
