@@ -60,9 +60,12 @@ export default function Pricing() {
           <div className="pr-card featured reveal">
             <div className="pr-badge">Ongoing</div>
             <div className="pr-price">$650</div>
-             <span className="pr-type">Monthly facility fee</span>
+            <div style={{ color: '#ffffff', fontSize: '0.85rem', fontWeight: '600', marginTop: '0.5rem', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>What's Included:</div>
             <ul className="pr-list">
-             
+              <li>
+                {checkIcon}
+                Client Office Space — your dedicated professional suite
+              </li>
               <li>
                 {checkIcon}
                 Continuous project management
@@ -73,7 +76,15 @@ export default function Pricing() {
               </li>
               <li>
                 {checkIcon}
-                Client Office Space — your dedicated professional suite
+                24/7 CCTV Monitoring
+              </li>
+              <li>
+                {checkIcon}
+                Employee Parking On-site
+              </li>
+              <li>
+                {checkIcon}
+                Free High-Speed WiFi
               </li>
             </ul>
           </div>
