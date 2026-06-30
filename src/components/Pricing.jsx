@@ -59,14 +59,10 @@ export default function Pricing() {
           {/* Card 2: Featured Monthly Fee */}
           <div className="pr-card featured reveal">
             <div className="pr-badge">Ongoing</div>
-            <span className="pr-type">Monthly Fee</span>
             <div className="pr-price">$650</div>
-            <span className="pr-sub">Ongoing Administrative Services</span>
+             <span className="pr-type">Monthly facility fee</span>
             <ul className="pr-list">
-              <li>
-                {checkIcon}
-                <strong>Monthly Rent</strong> — $650/month facility fee
-              </li>
+             
               <li>
                 {checkIcon}
                 Continuous project management
