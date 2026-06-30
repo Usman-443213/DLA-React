@@ -58,10 +58,12 @@ export default function Reviews() {
           <div className="tcarousel-track">
             {doubleReviews.map((rev, idx) => (
               <blockquote key={idx} className={`tcard ${idx % 2 === 1 ? 'tcard--accent' : ''}`}>
+                <div className="tcard-quote-mark">“</div>
                 <div className="tcard-stars">
                   {Array.from({ length: rev.stars }).map((_, i) => '★').join('')}
                 </div>
                 <p className="tcard-quote">"{rev.quote}"</p>
+                <div className="tcard-divider"></div>
                 <footer className="tcard-author">
                   <span className="tcard-name">{rev.name}</span>
                   <span className="tcard-detail">{rev.location}</span>

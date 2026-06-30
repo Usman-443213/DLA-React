@@ -1715,20 +1715,21 @@ footer {
   flex-shrink: 0;
   width: 340px;
   background: var(--navy-m);
-  border: 1px solid rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.18);
   border-radius: 16px;
   padding: 2.2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin: 0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .tcard:hover {
-  border-color: var(--gold);
-  box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+  border-color: rgba(201, 168, 76, 0.5);
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.2);
   transform: translateY(-4px);
 }
 
@@ -1737,10 +1738,23 @@ footer {
   background: linear-gradient(135deg, var(--navy-l), var(--navy-m));
 }
 
+.tcard-quote-mark {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.5rem;
+  font-size: 5.5rem;
+  font-family: Georgia, serif;
+  color: rgba(201, 168, 76, 0.12);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
 .tcard-stars {
-  color: var(--gold);
-  font-size: 1.15rem;
-  letter-spacing: 2px;
+  color: #E8C96A;
+  font-size: 1.05rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
 }
 
 .tcard-quote {
@@ -1752,16 +1766,21 @@ footer {
   margin: 0;
 }
 
+.tcard-divider {
+  width: 28px;
+  height: 1px;
+  background: rgba(201, 168, 76, 0.45);
+  margin: 1.3rem 0 1.1rem;
+}
+
 .tcard-author {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .tcard-name {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--white);
 }
