@@ -58,7 +58,7 @@ export default function Pricing() {
 
           {/* Card 2: Featured Monthly Fee */}
           <div className="pr-card featured reveal">
-            <span className="pr-type">One-Time Fee</span>
+            <span className="pr-type">Monthly Fee</span>
             <div className="pr-badge">Ongoing</div>
             <div className="pr-price">$650</div>
             <div style={{ color: '#ffffff', fontSize: '0.85rem', fontWeight: '600', marginTop: '0.5rem', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>What's Included:</div>
